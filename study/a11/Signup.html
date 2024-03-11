@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>회원가입</h1>
+                <form action="signup">
+
+                    <legend>회원가입정보</legend>
+                        <fieldset>
+                        <div>
+                            <label>아이디(*)</label>
+                            <input name="uid" placeholder="영문6자이상" autofocus>
+                            <output>유효한 아이디 입니다.</output>
+                        </div>
+                        
+                        <div>
+                            <label>나이</label>
+                            <input name="age" required type="number" min="10" max="90">
+                        </div>
+
+                        <div>
+                            <label>전번</label>
+                            <input name="phone" required placeholder="대시(-)생략:01012345678">
+                            <output>유효한 번호 입니다.</output>
+                        </div>
+
+                        <div>
+                            <label>이메일</label>
+                            <input name="mail">
+                            <output>유효한 이메일 입니다.</output>
+                        </div>
+
+
+                        <div>
+                            <label>비밀번호</label>
+                            <input name="pwd">
+                            <output>유효한 비밀번호 입니다.</output>
+                        </div>
+
+                        <div>
+                            <label>비밀번호확인</label>
+                            <input name="">
+                            <output> 입니다.</output>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>가장 좋아하는 취미</legend>
+                        <input type="radio" id="r" name="hb" value="1">
+                        <label for="r">독서</label>
+                        <input type="radio" id="m" name="hb" value="2">
+                        <label for="m">등산</label>
+                        <input type="radio" id="cs" name="hb" value="3">
+                        <label for="m">축구시청</label>
+                        <select name="chb">
+                            <option>선택</option>
+                            <option value="1">독서</option>
+                            <option value="2">등산</option>
+                            <option value="3">축구시청</option>
+                        </select>
+                        <input type="text" name="hb2" list="hb2-list">
+                        <datalist id="hb2-">
+                            <option value="여행">
+                            <option value="여의봉">
+                            <option value="여기어때">
+                            <option value="여흥">
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>좋아하는 취미</legend>
+                        <input type="checkbox" id="r" name="hb1" value="1">
+                        <label for="r">독서</label>
+                        <input type="checkbox" id="m" name="hb1" value="2">
+                        <label for="m">등산</label>
+                        <input type="checkbox" id="cs" name="hb1" value="3">
+                        <label for="m">축구시청</label>
+
+                        <select multiple name="ch1b">
+                         
+                            <option value="1">독서</option>
+                            <option value="2">등산</option>
+                            <option value="3">축구시청</option>
+
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>추가 입력컨트롤</legend>
+                        <label for="r">가입일</label>
+                        <input type="date" value="회원가입">
+                        <label for="r">색상</label>
+                        <input type="color" value="회원가입">
+                        <label for="r">볼륨</label>
+                        <input type="range" value="회원가입" max="100" min="0">
+                    </fieldset>
+                    <div>
+                        <input type="submit" value="회원가입">
+                    </div>
+            </form>
+        </section>
+    </header>
+</body>
+</html>

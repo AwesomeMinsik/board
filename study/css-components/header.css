@@ -1,0 +1,27 @@
+.root-header{
+    
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    /* justify-content: center; */
+    .content{
+        height: 100%;
+        width: 80%;
+        max-width: 800px;
+        /* background-color: #f00; */
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (min-width:760px) {
+
+    .root-header{
+        height: 70px;
+
+        .content{
+            height: 70px;
+            /* background-color: aqua; */
+        }
+    }
+
+}

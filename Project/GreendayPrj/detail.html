@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Project/GreendayPrj/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/header.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/detail/detail-main.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/icon.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="root-header" id="header">
+        <h1 class="hidden-header">헤더</h1>
+        <section>
+            <h1 class="menu-header">상단메뉴</h1>
+            <div class="content">
+                <div class="box-icons">
+                    <div><a href="" class="icon icon-menu">메뉴</a></div>
+                </div>
+                    <div><a href="" class="icon icon-home">Greenday</a></div>
+                <div class="box-icons">
+                    <div><a href="" class="icon icon-basket">장바구니</a></div>
+                    <form action="./search/">
+                        <label for="menus"></label>
+                        <input type="search" id="menus" name="q" class="box-text"/>
+                        <button type="submit" class="icon icon-search">검색</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="root-main">
+        <section class="root-detail-info" >
+            <h1 class="hidden-header">식물1상세메뉴</h1>
+            <div class="d-m-i">
+                <div class="detail-menu-img"><img src="/Project/GreendayPrj/Img/IMAGES/plants2.jpeg" class="detail-menu-img" alt="" ></div>
+                <div class="detail-info-font detail-info">
+                    <div class="detail-info-text">  
+                        <div class="detail-korname-font">식물1</div>
+                        <div class="detail-price-font">가격:10000원</div>
+                        <div class="detail-info-font"><b class="b-font">배송날짜 구매일로부터1~3일(공휴일)</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="root-detail-menu-bar">
+                <nav class="detail-menu_bar">
+                    <div class=""><a href="#detail-info">상세정보</a></div>
+                    <div class=""><a href="#detail-review" >상품후기</a></div>
+                    <div class=""><a href="#detail-QnA">상품문의</a></div>
+                </nav>
+                <div class="info-statement-box">
+                    <div class="info-statement-content">
+                        <b class="b-font"></b>
+                    </div>
+                </div>
+            </div>
+            <section class="order-menu-bar">
+                <h1 class="hidden-header">주문,장바구니상태</h1>
+                <div class="box-basket"><a href="" class="basket-font">장바구니</a></div>
+                <div class="box-payment"><a href="" class="payment-font">결제</a></div>
+            </section> 
+        </section>
+
+        <section>
+            <h1 class="hidden-header">상품정보 네비게이터</h1>
+            <div>
+                <div id="detail-info">
+                    <img class="img-intro-detail" src="/Project/GreendayPrj/Img/IMAGES/detail_title01.jpeg" width="100%" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="box-title" id="detail-review">상품후기</h1>
+            <div>
+                <div class="box-btn-review">
+                    <div class="btn-review">후기작성</div>
+                </div>
+                <div>
+                    <div class="CardUI-review">
+                        <div class="review-img-box"><img class="review-img-size" src="/Project/GreendayPrj/Img/IMAGES/flower6.jpeg" alt=""></div>
+                        <div>
+                            <div class="text-box-review">
+                                <div>별점</div>
+                                <div>4.5</div>
+                                <div class="client-review">나무가 너무 예뻐요</div>
+                                <div>ID:마오카이</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="CardUI-review">
+                        <div class="review-img-box"><img class="review-img-size" src="/Project/GreendayPrj/Img/IMAGES/plants2.jpeg" alt=""></div>
+                        <div>
+                            <div class="text-box-review">
+                                <div>별점</div>
+                                <div>4.5</div>
+                                <div class="client-review">나무가 너무 예뻐요</div>
+                                <div>ID:마오카이</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="box-btn-more">
+                    <div class="btn-more">더보기</div>
+                </div>
+            </div>
+            <section>
+                <div class="box-title-QnA">
+                    <h1 class="title-QnA" id="detail-QnA">상품문의</h1>
+                </div>
+                <div>
+                    <div class="CardUI-review">
+                        <div class="review-img-box"><img class="review-img-size" src="/Project/GreendayPrj/Img/IMAGES/flower4.jpeg" alt=""></div>
+                        <div>
+                            <div class="text-box-review">
+                                <div class="client-review">나무가 너무 못생겼어요</div>
+                                <div>ID:김**</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-btn-review">
+                        <div class="btn-review">문의하기</div>
+                    </div>
+                </div>
+            </section>
+                <div class="top-size">
+                    <div class="btn-top"><a href="#header">top</a></div>
+                </div>
+        </section>
+        <footer class="root-footer">
+            <h1>홈페이지 이용약관</h1>
+            <div>ⓒ동서조경산업</div>
+            <div>Greenday 저작권정보</div>
+            <div>연락처 010-1234-5678</div>
+            <div>하이미디어 별관3층 강의실 1조</div>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: white;
+        height: 6000px;
+        font-family: 'nanumsquare';
+    }
+    div{
+        margin-top: 1000px;
+        color: black;
+        text-align: center;
+        opacity: 0;
+        transition: all 2.0s;
+    }
+</style>
+<body>
+    <div><h1>순위별 영화 카테고리</h1></div>
+    <section>
+    <div><h1>개봉예정작</h1></div>
+    <div><h1>서울의봄</h1></div>
+    <div><h1>외계인</h1></div>
+    <div>웡카</div>
+    </section>
+    <script>
+        let observer = new IntersectionObserver((e)=>{
+            e.forEach((박스)=>{
+                if(박스.isIntersecting){
+                박스.target.style.opacity = 1;
+                }
+            })
+        })
+
+            
+
+        let div = document.querySelectorAll('div')
+        observer.observe(div[0])
+        observer.observe(div[1])
+        observer.observe(div[2])
+        observer.observe(div[3])
+        observer.observe(div[4])
+
+    </script>
+</body>
+</html>

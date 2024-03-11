@@ -1,0 +1,16 @@
+:root{
+    /* --height-2: 32px;
+    --icon-size\:1:20px; */
+
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+main{
+    flex-grow: 1;
+}

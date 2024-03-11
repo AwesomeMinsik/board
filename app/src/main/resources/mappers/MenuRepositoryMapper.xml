@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="kr.co.rland.app.repository.MenuRepository">
+	<!-- <resultMap id="menuMap" type="kr.co.rland.app.entity.Menu">
+		<result property="korName" column="kor_name" />
+		<result property="engName" column="eng_name" />
+	</resultMap> -->
+	
+	<!-- <select id="findAll" resultMap="menu">
+		select * from menu
+	</select> -->
+
+		<select id="findAll" resultType="MenuView">
+		
+		select * from menu_view
+
+		<where>
+		<if test="id != null">
+		category_id = #{id}
+		</if>
+		<if test="query != null">
+		and kor_name like '%${query}%'
+		</if>
+		</where>
+  			limit #{offset} ,#{size}
+		</select>
+	
+	<select id="findById" resultType="Menu">
+		select * from menu
+		where id=#{id}
+	</select>
+
+	<!-- <select id="findBySearchId" resultType="MenuView">
+	select * from menu_view where kor_name like '%${name}%' 
+	</select> -->
+
+
+	<select id="Count" resultType="Long">
+
+	SELECT COUNT(id)
+	FROM menu_view
+	<where>
+		<if test="id != null">
+		category_id = #{id}
+		</if>
+		<if test="query != null">
+		and kor_name like '%${query}%'
+		</if>
+		</where>
+	</select>
+</mapper>

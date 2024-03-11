@@ -1,0 +1,45 @@
+.hide-main{
+    display: none;
+}
+.titlebox-menulist{
+    margin-top: 2px;
+    border-bottom: 1px solid #ccc;
+
+}
+.one-line-menu{
+    display: inline-block;
+    /* border: solid;
+    border-width: 1px ; */
+    border-radius: 4px;
+    margin: 8px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding-bottom: 1px;
+}
+.menu-img{
+    width: 222px;
+    border-radius: 4px;
+}
+.box-menu{
+    display: flex;
+    align-items: center;
+}
+.info-menu{
+    align-items: center;
+    font-size:medium;
+}
+.ORDER_MENU_BAR{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-price{
+    
+}
+.menu-engname-font{
+    font-size: small;
+    color: #515151;
+}
+.box-menu-icon{
+    margin-left: 46px;
+}

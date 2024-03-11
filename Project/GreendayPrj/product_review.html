@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Project/GreendayPrj/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/header.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/icon.css" type="text/css" rel="stylesheet">
+    <link href="/Project/GreendayPrj/css/review/review.css" type="text/css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="root-header" id="header">
+        <h1 class="hidden-header">헤더</h1>
+        <section>
+            <h1 class="menu-header">상단메뉴</h1>
+            <div class="content">
+                <div class="box-icons">
+                    <div><a href="" class="icon icon-menu">메뉴</a></div>
+                </div>
+                    <div><a href="" class="icon icon-home">Greenday</a></div>
+                <div class="box-icons">
+                    <div><a href="" class="icon icon-basket">장바구니</a></div>
+                    <form action="./search/">
+                        <label for="menus"></label>
+                        <input type="search" id="menus" name="q" class="box-text"/>
+                        <button type="submit" class="icon icon-search">검색</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <main class="root-main-review">
+        <h1 class="hidden-header">메인콘텐츠</h1>
+        <section class="section-review">
+            <h1 class="hidden-header">후기목록</h1>
+            <div class="style-title-review">
+                <div class="size-title-review-font">후기작성</div>
+            </div>
+            <div class="size-text-box-review">
+                <textarea placeholder="내용입력하셈" class="text-box-review"></textarea>
+            </div>
+            <div class="box-review">
+                <!-- <div class="box-size-rvpoint">별점</div> -->
+                <!-- <div class="box-size-star"><button></button> -->
+                <input type="file">
+                </div>
+            </div>
+            <div class="box-review">
+                <!-- <div class="box-size-rvpoint">별점</div> -->
+                <!-- <div class="box-size-star"><button></button> -->
+                <span class="box-size-star"></span>
+                <span class="box-size-star"></span>
+                <span class="box-size-star"></span>
+                <span class="box-size-empty-star"></span>
+                <span class="box-size-empty-star"></span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="review-btn-sect">
+                <button class="review-submit-btn">후기등록</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

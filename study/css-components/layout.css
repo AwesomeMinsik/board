@@ -1,0 +1,26 @@
+:root{
+    --color-base-1: #ffffff;
+    --color-base-2: #efefef;
+    --color-base-3: #dfdfdf;
+    --color-base-4: #cfcfcf;
+    --color-base-5: #bfbfbf;
+    --color-base-6: #afafaf;
+    --color-base-7: #9f9f9f;
+    --color-base-8: #6f6f6f;
+    --color-base-9: #3f3f3f;
+    --color-base-10: #000;
+    --height-2: 32px;
+    --icon-size\:1:20px;
+
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+main{
+    flex-grow: 1;
+}

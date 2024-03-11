@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <form action="regist">
+                <a href="/Project/HomePage/조경 Prj.html">
+                    <img src="/Project/Asset/imgs/Screenshot 2024-01-01 131352.png" width="150" height="30 alt="홈">
+                </a>
+                <fieldset>
+                    <legend>회원가입정보입력</legend>
+                    <div>
+                        <label for="ID">사용할ID입력(*)</label>
+                        <input type="text" id="ID" required placeholder="ID를 입력해주세요" autofocus >
+                    </div>
+                    <div>
+                        <label for="PW">비밀번호입력(*)</label>
+                        <input type="text" id="PW" required placeholder="PW를 입력해주세요">
+                    </div>
+                    <div>
+                        <label for="PW">비밀번호확인(*)</label>
+                        <input type="text" id="PW" required placeholder="PW를 확인해주세요">
+                    </div> 
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>개인정보입력</legend>
+                    <div>
+                        <label for="NAME">이름(*)</label>
+                        <input type="text" id="NAME" required placeholder="이름을 입력해주세요">
+                    </div>
+                    <div>
+                        <label for="PN">전화번호(*)</label>
+                        <input type="text" id="PN" required placeholder="전화번호를 입력해주세요">
+                    </div>
+                    <div>
+                        <label for="CVN">주민등록번호(*)</label>
+                        <input type="text" id="CVN" required placeholder="주민등록번호를 입력해주세요">
+                    </div>
+                    <div>
+                        <label for="Email">이메일(선택)</label>
+                        <input type="text" id="Email" required placeholder="이메일을 입력해주세요">
+                    </div>
+                    <div>
+                        <input type="radio" id="r" name="Domest" value="1">
+                        <label for="Domest">내국인</label>
+                        <input type="radio" id="m" name="Domest" value="2">
+                        <label for="Foreign">외국인</label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="회원가입">
+            </form>
+        </section>
+    </header>
+</body>
+</html>   
